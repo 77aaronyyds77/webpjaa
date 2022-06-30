@@ -1,0 +1,43 @@
+html{font-family: "Microsoft YaHei", serif; font-size:14px;color:#444}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,table,form,img,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,
+footer,header,menu,nav,section{margin:0;padding:0; font-weight: 500;}
+img{border:0;vertical-align:top}
+ul,li{list-style-type:none; padding:0;  margin:0; border:0;}
+a{text-decoration: none;color:#444;}
+a:hover{color:#b26f25;}
+.overall{width:100%; height:auto; top:0px;overflow-x:hidden;}
+
+.fl{float:left}
+.fr{float:right}
+.clear{display:block;overflow:hidden;clear:both;height:0;line-height:0;font-size:0}
+.t20{ padding-top:20px;}
+.t10{ padding-top:10px;}
+.header-wrap {width: 100%;background: #002147;}
+.header {width: 1200px;height: 130px;margin: 0 auto;padding-top: 18px;}
+.nav{background: #001733;height:50px;width:100%;}
+/*ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âª*/
+.gj_menu{width:1200px;height:50px;margin:0 auto;}
+.gj_menu ul li{width: 109px;height:50px;float:left;line-height:50px;text-align:center;color:#fff;font-size:16px;position:relative;z-index:999;}
+.gj_menu ul li:hover{background: #0a3971;}
+.gj_menu ul li .second{position:absolute;left:0;display:none;z-index:9999;width: 165px;}
+.gj_menu ul li .second ul li{width: 126px;height:42px;float:left;line-height:42px;padding:0 15px;text-align:left;font-size:14px !important;}
+.gj_menu ul li a{color:#FFF;}
+.navon{}
+.logo{
+    background: #223e62;
+    width: 100%;
+    transform: translateX(10px);
+}
+#logo{
+    transform: translateX(170px);
+}
+.ssk{
+    display: inline-block;
+    margin-left: 180px;
+    margin-top: 50px;
+    margin-bottom: 7px;
+    transform: translateX(300px);
+
+    border-radius: 15px;
+    line-height: 30px;
+}
