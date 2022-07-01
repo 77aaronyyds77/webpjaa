@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="logo">
-    <img src="../../logo.jpg" alt="" id="logo">
+    <img src="../../goat/image/img/logo.jpg" alt="" id="logo">
 
     <input class="ssk" name="showkeycode" id="showkeycode204145" type="text" value="请输入搜索内容 " onfocus="this.value=''" onblur="if (value ==''){value='请输入搜索内容 '}" />
 

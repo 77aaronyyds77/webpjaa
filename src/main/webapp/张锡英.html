@@ -1,154 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>张锡英</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="all.css">
     <style>
-        .pic img{
-            display: inline-block;
-            margin-left: 605px;
+        .tyr img{
             width: 250px;
         }
-        h1, h2{
-            text-align: center;
+        body .shell-main-nav ul .nav-box {
+            left: 360px;
         }
-        p{
-            text-indent: 2em;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(248, 248, 248);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        body .shell-main-nav {
+            margin-bottom: 0;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1430px;
+            overflow-x: hidden;
+            transform: translateY(0px);
+            background-color: #fff;
+            transition: .3s;
+            padding: 50px;
+            border: 1px solid #000;
+        }
+
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('2.png');
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .img::after {
+            content: '张锡英';
+            width: 500px;
+            height: 200px;
+            border-radius: 3px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: #fff 10px solid;
+            color: #fff;
+            letter-spacing: 30px;
+            font: 100 70px 'font';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        /* -------------------------------------- */
+
+        .section-top {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .section-top-middle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: url('logo.jpg');
+            background-size: cover;
+            background-position-y: -30px;
+            margin: 0 50px;
+            border: 15px solid rgba(0, 0, 0, 0.151);
+        }
+
+        .section-top-left,
+        .section-top-right {
+            width: 300px;
+            height: 300px;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .section-top-left {
+            text-align: right;
+        }
+
+        .section-top p {
+            font-size: 26px;
+            color: #22A39F;
+            margin: 5px 0;
+        }
+
+        .section-middle,
+        .section-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-bottom {
+            position: relative;
+        }
+
+        .section-middle-box {
+            width: 100%;
+            display: flex;
+            margin: 50px 0;
+        }
+
+        .section-middle-left {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-middle-left span {
+            text-align: left;
+            color: rgb(241, 167, 167);
+            margin-top: 10px;
+        }
+
+        .section-middle-right {
+            width: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .section-middle-right img {
+            width: 400px;
+        }
+
+        .section-middle-left span {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .Skills {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 40px 0;
+        }
+
+        .Skills li {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .Skills li span,
+        .Skills li p {
+            text-align: center;
+            font-size: 20px;
+            display: block;
+            width: 50%;
+            transition: .2s;
+            letter-spacing: 0px;
+        }
+
+        .Skills li p {
+            color: #22A39F;
+        }
+
+        .Skills li:hover p {
+            letter-spacing: 5px;
+        }
+
+        .Achievement {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Achievement-left {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .Achievement-left h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .Achievement-left span {
+            font-size: 10px;
+        }
+
+        .Achievement-right {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 450px;
+        }
+
+        .Achievement-right img {
+            width: 200px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        .Achievement-right img:hover {
+            transform: scale(1.1);
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+        }
+
+        aside {
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(240, 240, 224);
+            padding: 50px 0;
+        }
+        .bottom{
+            width: 1300px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .bottom::after{
+            content: '东林景观';
+            position: absolute;
+            top: -170px;
+            width: 100%;
+            text-align: center;
+            font: 300 40px '';
+        }
+        .bottom img{
+            width: 23%;
+            height: 300px;
         }
     </style>
-    <link rel="stylesheet"  href="css/pjcss.css">
-    <link rel="stylesheet"  href="css/轮播图.css">
-
-    <link rel="stylesheet"  href="css/33.css">
 </head>
+
 <body>
-<!--head-->
-<div class="logo">
-    <img src="logo.jpg" alt="" id="logo">
-
-    <input class="ssk" name="showkeycode" id="showkeycode204145" type="text" value="请输入搜索内容 " onfocus="this.value=''" onblur="if (value ==''){value='请输入搜索内容 '}" />
-
-
-    <div class="nav">
-        <div class="gj_menu fm">
+<div class="shell">
+    <div class="shell-main">
+        <div class="shell-main-nav">
+            <div class="logo">
+                <!--  <img src="./image/logo.jpg" alt="">-->
+                <span>软件工程专业</span>
+            </div>
             <ul>
-                <li><a href="index.html" title="首页">首页</a>
+                <li><a href="index.html">首页</a></li>
 
-                </li>
-                <li><a href="学院概况.html" title="学院概况">学院概况</a>
-
-                    <div class="second">
-                        <ul>
-                            <li><a href="xygk/xyjj.htm"  title="学院简介">学院简介</a></li>
-                            <li><a href="xygk/xyld.htm"  title="学院领导">学院领导</a></li>
-                            <li><a href="xygk/xgwyh.htm"  title="相关委员会">相关委员会</a></li>
-                            <li><a href="xygk/jgsz.htm"  title="机构设置">机构设置</a></li>
-                        </ul>
-                    </div>
-
-
-                </li>
-
-
-                <li><a href="学院介绍.html" title="专业介绍">专业介绍</a>
-
-                    <div class="second">
-                        <ul>
-                            <li><a href="x_zy_b/jsjkxyjs.htm"  title="计算机科学与技术">计算机科学与技术</a></li>
-                            <li><a href="x_zy_b/rjgc.htm"  title="软件工程">软件工程</a></li>
-                            <li><a href="x_zy_b/sjkxydsjjs.htm"  title="数据科学与大数据技术">数据科学与大数据技术</a></li>
-                            <li><a href="x_zy_b/rgzn.htm"  title="人工智能">人工智能</a></li>
-                            <li><a href="x_zy_b/xxglyxxxt.htm"  title="信息管理与信息系统">信息管理与信息系统</a></li>
-                            <li><a href="x_zy_b/jsjjcjyysyzx.htm"  title="计算机基础教育与实验中心">计算机基础教育与实验中心</a></li>
-                            <li><a href="x_zy_b/dzxxgc.htm"  title="电子信息工程">电子信息工程</a></li>
-                            <li><a href="x_zy_b/txgc.htm"  title="通信工程">通信工程</a></li>
-                        </ul>
-                    </div>
-
-
-                </li>
-
-
-                <li><a href="师资队伍.html" title="师资队伍">师资队伍</a>
-
-                    <div class="second">
-                        <ul>
-                            <li><a href="szdw/jsjkxyjs.htm"  title="计算机科学与技术">计算机科学与技术</a></li>
-                            <li><a href="szdw/rjgc.htm"  title="软件工程">软件工程</a></li>
-                            <li><a href="szdw/sjkxydsjjs.htm"  title="数据科学与大数据技术">数据科学与大数据技术</a></li>
-                            <li><a href="szdw/jsjjcjyysyzx.htm"  title="计算机基础教育与实验中心">计算机基础教育与实验中心</a></li>
-                            <li><a href="szdw/txgc.htm"  title="通信工程">通信工程</a></li>
-                            <li><a href="szdw/dzxxgc.htm"  title="电子信息工程">电子信息工程</a></li>
-                            <li><a href="szdw/kygw.htm"  title="科研岗位">科研岗位</a></li>
-                        </ul>
-                    </div>
-
-
-
-
-
-                <li><a href="科学研究.html" title="科学研究">科学研究</a>
-
-                    <div class="second">
-                        <ul>
-                            <li><a href="kxyj/kyxm.htm"  title="科研项目">科研项目</a></li>
-                            <li><a href="kxyj/cgjjl.htm"  title="成果及奖励">成果及奖励</a></li>
-                            <li><a href="kxyj/yjtdycxpt.htm"  title="研究团队与创新平台">研究团队与创新平台</a></li>
-                        </ul>
-                    </div>
-
-
-                </li>
-
-
-
-
-
-
+                <li><a href="make.html">学院概况</a></li>
+                <li><a href="painter.html">新闻中心和通知公告</a></li>
+                <li><a href="Login.html">登录</a></li>
+                <div class="nav-box"></div>
             </ul>
         </div>
-    </div>
-</div>
-<!--head-->
-<div>
-    <h1>软件工程</h1>
-    <hr>
-    <div>
+        <div class="img"></div>
+        <div class="main">
+            <aside>
+                <div class="tyr">
+                    <img src="张锡英.jpg" alt=""></div>
+                <h2 style="font-size: 30px; margin-top: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张锡英， 副教授，硕士，硕士生导师。主要研究方向：现代信息技术及网络应用，数据库技术、图像检索。主持或参加科研项目 11 项，发表论文 9 篇，出版教材 2 部。获得省级科学技术进步奖1次， 2 门课精品课主讲教师。
+
+                    所在学科：计算机科学与技术，软件工程（专业学位）。
+
+                </h2><br />
+
+                <br>  <br>
+
+                <br>
+                <br>
+                <br> <br>
 
 
-        <div class="pic">
-            <img src="张锡英.jpg" alt="">
+
+                </p>
+            </aside>
         </div>
-        <h2>张锡英</h2>
-        <div>
-            <p>张锡英， 副教授，硕士，硕士生导师。主要研究方向：现代信息技术及网络应用，数据库技术、图像检索。主持或参加科研项目 11 项，发表论文 9 篇，出版教材 2 部。获得省级科学技术进步奖1次， 2 门课精品课主讲教师。</p>
-            <p>所在学科：计算机科学与技术，软件工程（专业学位）</p>
-            <p>Email：zhangxy@nefu.edu.cn</p>
+        <div class="bottom">
+            <img src="知圆雪景.jpg" alt="">
+            <img src="滑冰场2.jpg" alt="">
+            <img src="丹青46级.jpg" alt="">
+            <img src="宿舍楼前.jpg" alt="">
         </div>
-    </div>
-</div>
-<br>
-<!--底部-->
-<div class="box">
-    <div class="footer">
-        <div class="foota">
-            <h3>友情链接 Links</h3>
-            <ul>
-
-                <li><a href="https://www.nefu.edu.cn/">东北林业大学</a></li>
-                <li><a href="https://cas.webvpn.nefu.edu.cn/cas/login?service=https%3A%2F%2Fi.webvpn.nefu.edu.cn%2Fdcp%2Fforward.action%3Fpath%3D%2Fportal%2Fportal%26p%3Dhome">数字东林</a></li>
-                <li><a href="https://lib.nefu.edu.cn/">图书馆</a></li>
-                <li><a href="https://jwc.nefu.edu.cn/">教务处</a></li>
-                <li><a href="https://icec.nefu.edu.cn/xkjs2/xkjstz.htm">学科竞赛</a></li></ul>
-
+        <div class="shell-main-footer">
+            <span>版权所有 东北林业大学信息与计算机工程学院 软件工程专业 © 2022 </span>
         </div>
-        <div class="foottext">
-            <p>东北林业大学<br>
-                软件工程专业 2022&copy;</p>
-        </div>
-
     </div>
 
 </div>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<script>
+    window.addEventListener('scroll', function () {
+        let top = window.scrollY
+        console.log(top)
+        if (top > 200) {
+            $('.main').css('transform', 'translateY(-300px)')
+        } else {
+            $('.main').css('transform', 'translateY(0%)')
+        }
+        // if (top > 650) {
+
+        // } else {
+
+        // }
+    })
+</script>
 </body>
+
+
+
+
+
 </html>

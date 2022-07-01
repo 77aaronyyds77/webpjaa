@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息与计算机工程学院工会开展“锦鲤祝考 旗开得胜”活动</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="all.css">
+    <style>
+        body .shell-main-nav ul .nav-box {
+            left: 360px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(248, 248, 248);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        body .shell-main-nav {
+            margin-bottom: 0;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1430px;
+            overflow-x: hidden;
+            transform: translateY(0px);
+            background-color: #fff;
+            transition: .3s;
+            padding: 50px;
+            border: 1px solid #000;
+        }
+
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('2.png');
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .img::after {
+            content: '新闻和通知';
+            width: 500px;
+            height: 200px;
+            border-radius: 3px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: #fff 10px solid;
+            color: #fff;
+            letter-spacing: 30px;
+            font: 100 70px 'font';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        /* -------------------------------------- */
+
+        .section-top {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .section-top-middle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: url('logo.jpg');
+            background-size: cover;
+            background-position-y: -30px;
+            margin: 0 50px;
+            border: 15px solid rgba(0, 0, 0, 0.151);
+        }
+
+        .section-top-left,
+        .section-top-right {
+            width: 300px;
+            height: 300px;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .section-top-left {
+            text-align: right;
+        }
+
+        .section-top p {
+            font-size: 26px;
+            color: #22A39F;
+            margin: 5px 0;
+        }
+
+        .section-middle,
+        .section-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-bottom {
+            position: relative;
+        }
+
+        .section-middle-box {
+            width: 100%;
+            display: flex;
+            margin: 50px 0;
+        }
+
+        .section-middle-left {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-middle-left span {
+            text-align: left;
+            color: rgb(241, 167, 167);
+            margin-top: 10px;
+        }
+
+        .section-middle-right {
+            width: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .section-middle-right img {
+            width: 400px;
+        }
+
+        .section-middle-left span {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .Skills {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 40px 0;
+        }
+
+        .Skills li {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .Skills li span,
+        .Skills li p {
+            text-align: center;
+            font-size: 20px;
+            display: block;
+            width: 50%;
+            transition: .2s;
+            letter-spacing: 0px;
+        }
+
+        .Skills li p {
+            color: #22A39F;
+        }
+
+        .Skills li:hover p {
+            letter-spacing: 5px;
+        }
+
+        .Achievement {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Achievement-left {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .Achievement-left h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .Achievement-left span {
+            font-size: 10px;
+        }
+
+        .Achievement-right {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 450px;
+        }
+
+        .Achievement-right img {
+            width: 200px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        .Achievement-right img:hover {
+            transform: scale(1.1);
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+        }
+
+        aside {
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(240, 240, 224);
+            padding: 50px 0;
+        }
+        .bottom{
+            width: 1300px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .bottom::after{
+            content: '东林景观';
+            position: absolute;
+            top: -170px;
+            width: 100%;
+            text-align: center;
+            font: 300 40px '';
+        }
+        .bottom img{
+            width: 23%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="shell">
+    <div class="shell-main">
+        <div class="shell-main-nav">
+            <div class="logo">
+             <!--   <img src="./image/logo.jpg" alt="">-->
+                <span>软件工程专业</span>
+            </div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+
+                <li><a href="make.html">学院概况</a></li>
+                <li><a href="painter.html">新闻中心和通知公告</a></li>
+                <li><a href="Login.html">登录</a></li>
+                <div class="nav-box"></div>
+            </ul>
+        </div>
+        <div class="img"></div>
+        <div class="main">
+            <aside>
+                <h2 style="font-size: 30px; margin-top: 30px;">信息与计算机工程学院工会开展“锦鲤祝考 旗开得胜”活动</h2><br />
+                <span>作者：aaron   时间：2022-06-15   点击数：79</span>
+                <p style="margin-top: 50px;font-size: 18px; color: #37373796;">
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为更好地关心关爱职工子女的成长，全心全意为基层服务，把基层工会的活动落实到每一个细节和实处， <br>
+
+                    <br> 建设成为真正暖心的“职工之家”，信息与计算机工程学院工会在成栋楼开展了“锦鲤祝考 旗开得胜”活动。
+                    <br> 学院党委书记钟蕾出席本次活动并代表学院为职工子女送上祝福，学院职工子女有中高考、小升初、
+                    <br> 幼升小的老师和部分工会委员参加活动。会议由学院工会主席黄英来主持。 <br>
+
+                    <br> 活动共分为两部分，第一部分是“锦鲤祝考 旗开得胜——信息学院助力职工子女中考”活动，
+                    <br>学院党委书记钟蕾为职工送上工会精心准备的“锦鲤”礼盒和贺卡，并针对哈尔滨市教育改革的
+                    <br> 现状表达了学院对职工和孩子们的祝福：祝福所有的孩子们“考的都会”，所有家长的选择“选的都对”；
+                    <br>对今年参加中高考的考生们也送上了真挚的祝福，祝愿考生们一举夺魁，前程似锦！
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二部分是“锦鲤祝考 旗开得胜——信息学院育儿经验交流会”活动，孩子的培养始终是困扰家长最大的难题， <br>
+
+                    <br> 学院工会急职工之所急，想职工之所想，组织育儿经验交流会分享每位职工的成功经验和做法。
+                    <br> 席间邢键和张光磊老师首先分享了自己的育儿经验和一些辛酸过往， <br>
+
+                    <br> 夏宇、唐丽娜、赵更寅、王也、李实等老师也都积极分享了自己在育儿陪伴过程中的经验和感受，等等。 <br>
+
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过此次活动，现场的每一位职工都感受到了学院工会践行“奉献、友爱、互助、进步”的服务宗旨，
+                    <br>在炎炎夏日迎来了一丝清凉。一方面对教育子女都有了新的收获和感悟，
+                    <br>另一方面也对未来子女的教育和发展更加具有信心。大鹏一日同风起,扶摇直上九万里，
+                    <br> 信息与计算机工程学院工会将始终关心、助力教职工子女放飞梦想、翱翔九天视为己任做好服务！ <br>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>  <br>
+
+                    <br>
+                    <br>
+                    <br> <br>
+
+
+
+                </p>
+            </aside>
+        </div>
+        <div class="bottom">
+            <img src="知圆雪景.jpg" alt="">
+            <img src="滑冰场2.jpg" alt="">
+            <img src="丹青46级.jpg" alt="">
+            <img src="宿舍楼前.jpg" alt="">
+        </div>
+        <div class="shell-main-footer">
+            <span>版权所有 东北林业大学信息与计算机工程学院 软件工程专业 © 2022 </span>
+        </div>
+    </div>
+
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<script>
+    window.addEventListener('scroll', function () {
+        let top = window.scrollY
+        console.log(top)
+        if (top > 200) {
+            $('.main').css('transform', 'translateY(-300px)')
+        } else {
+            $('.main').css('transform', 'translateY(0%)')
+        }
+        // if (top > 650) {
+
+        // } else {
+
+        // }
+    })
+</script>
+</body>
+
+
+</html>
